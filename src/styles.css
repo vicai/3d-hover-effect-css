@@ -1,0 +1,70 @@
+body {
+  font-family: "Courier New";
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+img {
+  width: 100%;
+}
+
+.quote {
+  padding: 100px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 100%;
+  height: 40%;
+}
+
+.sub-quote {
+  padding-left: 40px;
+}
+
+.box {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin-top: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(-30deg) skew(25deg) scale(0.8);
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #edf9f7;
+  transition: 0.5s;
+  opacity: 0.6;
+}
+
+.box:hover .layer:nth-child(4) {
+  transform: translate(160px, -160px);
+  opacity: 1;
+}
+
+.box:hover .layer:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: 0.8;
+}
+
+.box:hover .layer:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: 0.6;
+}
+
+.box:hover .layer:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: 0.4;
+}
